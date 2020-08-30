@@ -44,13 +44,11 @@ public class SCMaven {
 				while ((responseLine = br.readLine()) != null) {
 					response.append(responseLine.trim());
 				}
-				System.out.println(response.toString());
 				String JsonString = response.toString();
 				Map<String, String> map = new HashMap<String, String>();
 
 				String[] JStr = JsonString.split("}],");
 				String Data = JStr[1];
-				// System.out.println(Data);
 				String[] KeyVal = Data.replaceAll(",", ":").split(":");
 
 				for (int i = 0; i < KeyVal.length; i = i + 2) {
