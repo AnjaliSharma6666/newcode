@@ -57,8 +57,7 @@ public class SCMaven {
 					map.put(KeyVal[i], KeyVal[i + 1]);
 				}
 
-				System.out.println("Started run with Run id is " + map.get("executionPlanRunId")
-				+ "for execution plan is " + map.get("executionPlanName"));
+				System.out.println("Started run with  " +  map.get("\"executionPlanRunId\"") + " for execution plan is "+ map.get("\"executionPlanName\"") + " with Run Status " + map.get("\"status\"") + " on Silk Central Project ID " + map.get("\"projectId\""));
 				Thread.sleep(20000);
 			}
 			conn.disconnect();
