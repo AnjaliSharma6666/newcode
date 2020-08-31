@@ -13,6 +13,8 @@ public class SCMaven {
  		int NodeID = Integer.parseInt(args[0]);
       		String HostName = args[1];
 		String UserToken = args[2];
+System.out.println(NodeID + " "+ HostName );
+Thread.sleep(20000);
 		
 
 		try {
