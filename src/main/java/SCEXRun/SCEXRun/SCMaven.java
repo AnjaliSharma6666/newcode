@@ -10,26 +10,10 @@ import java.util.Map;
 public class SCMaven {
 
 	public static void main(String[] args) throws Exception {
-		System.out.println(args[0]);
-		String[] input = args[0].split("::");
-		/*
-		 * for (String i:args) System.out.println(i);
-		 * 
-		 * int NodeID = Integer.parseInt(args[0]); String HostName = args[1]; String
-		 * UserToken = args[2]; System.out.println(NodeID + " "+ HostName );
-		 * Thread.sleep(20000);
-		 * 
-		 * 
-		 * try {
-		 */
 		
-		System.out.println(args);
-			SCMaven.SCRunExecution(Integer.parseInt(input[0]), input[1], input[2]);
-			/*SCMaven.SCRunExecution(NodeID, HostName, UserToken);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-*/
+		String[] input = args[0].split("::");
+		SCMaven.SCRunExecution(Integer.parseInt(input[0]), input[1], input[2]);
+
 	}
 
 	private static void SCRunExecution(int SC_ExecutionNodeId, String SC_Host, String SC_Token) throws Exception {
