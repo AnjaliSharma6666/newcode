@@ -10,7 +10,8 @@ import java.util.Map;
 public class SCMaven {
 
 	public static void main(String[] args) throws Exception {
- 		int NodeID = Integer.parseInt(args[0]);
+ 		//int NodeID = Integer.parseInt(args[0]);
+		String NodeID = args[0];
       		String HostName = args[1];
 		String UserToken = args[2];
 System.out.println(NodeID + " "+ HostName );
@@ -26,7 +27,7 @@ Thread.sleep(20000);
 
 	}
 
-	private static void SCRunExecution(int SC_ExecutionNodeId, String SC_Host, String SC_Token) throws Exception {
+	private static void SCRunExecution(String SC_ExecutionNodeId, String SC_Host, String SC_Token) throws Exception {
 
 		try {
 			URL url = new URL(SC_Host + "/Services1.0/execution/executionplanruns?nodeId=" + SC_ExecutionNodeId);
