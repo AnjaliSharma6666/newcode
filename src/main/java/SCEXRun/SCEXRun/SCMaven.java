@@ -11,6 +11,7 @@ public class SCMaven {
 
 	public static void main(String[] args) throws Exception {
 		System.out.println(args[0]);
+		String[] input = args[0].split("::");
 		/*
 		 * for (String i:args) System.out.println(i);
 		 * 
@@ -23,7 +24,7 @@ public class SCMaven {
 		 */
 		
 		System.out.println(args);
-			SCMaven.SCRunExecution(Integer.parseInt(args[0]), "http://desktop-5ivatg8:19120", args[1]);
+			SCMaven.SCRunExecution(Integer.parseInt(input[0]), input[1], input[2]);
 			/*SCMaven.SCRunExecution(NodeID, HostName, UserToken);
 		} catch (Exception e) {
 			e.printStackTrace();
