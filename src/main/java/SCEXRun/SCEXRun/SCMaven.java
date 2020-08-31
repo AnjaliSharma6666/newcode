@@ -23,7 +23,7 @@ public class SCMaven {
 		 */
 		
 		System.out.println(args);
-			SCMaven.SCRunExecution(args[0], "http://desktop-5ivatg8:19120", "327981e9-d9f0-4e00-9a78-1bcb86078ec2");
+			SCMaven.SCRunExecution(Integer.parseInt(args[0]), "http://desktop-5ivatg8:19120", "327981e9-d9f0-4e00-9a78-1bcb86078ec2");
 			/*SCMaven.SCRunExecution(NodeID, HostName, UserToken);
 		} catch (Exception e) {
 			e.printStackTrace();
