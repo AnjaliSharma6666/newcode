@@ -10,9 +10,14 @@ import java.util.Map;
 public class SCMaven {
 
 	public static void main(String[] args) {
+ 		int NodeID = Integer.parseInt(args[0]);
+      		String HostName = args[1];
+		String UserToken = args[2];
+		
 
 		try {
-			SCMaven.SCRunExecution(45, "http://desktop-5ivatg8:19120", "327981e9-d9f0-4e00-9a78-1bcb86078ec2");
+			//SCMaven.SCRunExecution(45, "http://desktop-5ivatg8:19120", "327981e9-d9f0-4e00-9a78-1bcb86078ec2");
+			SCMaven.SCRunExecution(NodeID, HostName, UserToken);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -55,7 +60,7 @@ public class SCMaven {
 					map.put(KeyVal[i], KeyVal[i + 1]);
 				}
 
-				System.out.println("Started run with  " +  map.get("\"executionPlanRunId\"") + " for execution plan is "+ map.get("\"executionPlanName\"") + " with Run Status " + map.get("\"status\"") + " on Silk Central Project ID " + map.get("\"projectId\""));
+				System.out.println("Started run with  " +  map.get("\"executionPlanRunId\"") + " for execution plan is "+ map.get("\"executionPlanName\"") + " with Run Status " + map.get("\"status\"") + " on Silk Central Project ID " + map.get("\"projectId\"") );
 				Thread.sleep(20000);
 			}
 			conn.disconnect();
