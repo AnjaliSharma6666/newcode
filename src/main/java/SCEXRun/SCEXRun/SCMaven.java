@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class SCMaven {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
  		int NodeID = Integer.parseInt(args[0]);
       		String HostName = args[1];
 		String UserToken = args[2];
