@@ -10,23 +10,22 @@ import java.util.Map;
 public class SCMaven {
 
 	public static void main(String[] args) throws Exception {
- 		for (String i:args)
-		System.out.println(i);
- 		
-		int NodeID = Integer.parseInt(args[0]);
-      		String HostName = args[1];
-      		String UserToken = args[2];
-			System.out.println(NodeID + " "+ HostName );
-			Thread.sleep(20000);
-		
-
-		try {
-			//SCMaven.SCRunExecution(45, "http://desktop-5ivatg8:19120", "327981e9-d9f0-4e00-9a78-1bcb86078ec2");
-			SCMaven.SCRunExecution(NodeID, HostName, UserToken);
+		/*
+		 * for (String i:args) System.out.println(i);
+		 * 
+		 * int NodeID = Integer.parseInt(args[0]); String HostName = args[1]; String
+		 * UserToken = args[2]; System.out.println(NodeID + " "+ HostName );
+		 * Thread.sleep(20000);
+		 * 
+		 * 
+		 * try {
+		 */
+			SCMaven.SCRunExecution(45, "http://desktop-5ivatg8:19120", "327981e9-d9f0-4e00-9a78-1bcb86078ec2");
+			/*SCMaven.SCRunExecution(NodeID, HostName, UserToken);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+*/
 	}
 
 	private static void SCRunExecution(int SC_ExecutionNodeId, String SC_Host, String SC_Token) throws Exception {
