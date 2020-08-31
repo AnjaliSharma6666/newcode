@@ -10,10 +10,12 @@ import java.util.Map;
 public class SCMaven {
 
 	public static void main(String[] args) throws Exception {
- 		String NodeID = args[0];
-		String IntNodeID = Integer.parseInt(NodeID);
+ 		int NodeID = Integer.parseInt(args[0]);
       		String HostName = args[1];
 		String UserToken = args[2];
+System.out.println(NodeID + " "+ HostName );
+Thread.sleep(20000);
+		
 
 		try {
 			//SCMaven.SCRunExecution(45, "http://desktop-5ivatg8:19120", "327981e9-d9f0-4e00-9a78-1bcb86078ec2");
