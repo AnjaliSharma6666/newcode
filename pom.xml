@@ -9,6 +9,8 @@
 
   <name>SCEXRun</name>
   <url>http://maven.apache.org</url>
+  <build>
+    <pluginManagement>
 <plugins>
       <plugin>
         <groupId>org.codehaus.groovy.maven</groupId>
@@ -31,7 +33,9 @@
           </execution>
         </executions>
       </plugin> 
-</plugins>	  
+</plugins>
+</pluginManagement>
+</build>	  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
