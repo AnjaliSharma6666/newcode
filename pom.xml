@@ -14,6 +14,25 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+
+<plugins>
+      <plugin>
+        <groupId>org.codehaus.groovy.maven</groupId>
+        <artifactId>gmaven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>silkcentral</id> <!-- If you have other execution: then only required -->
+            <phase>process-classes</phase> <!-- If you need to override  -->
+            <goals>
+              <goal>execute</goal>
+            </goals>
+            <configuration>
+              <source>SilkCentral.groovy</source>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+	  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -21,5 +40,6 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+	
   </dependencies>
 </project>
