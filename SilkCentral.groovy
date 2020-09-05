@@ -82,7 +82,8 @@ task silkCentralLaunch {
 }
 
 def verifyProperties() {
-  def requiredProperties = ['sc_executionNodeIds', 'sc_host', 'sc_token']
+  def requiredProperties = ['sc_executionNodeIds', 'sc_host', 'sc_token'] 
+  println requiredProperties
   requiredProperties.each {
     if (!project.hasProperty(it)) {
       throw new InvalidUserDataException("Please specify property ${it}")

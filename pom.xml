@@ -21,13 +21,6 @@
             <goals>
               <goal>execute</goal>
             </goals>
-            <configuration>
-			<properties>
-				 <sc_executionNodeIds>sc_propertyNames['sc_executionNodeIds']</sc_executionNodeIds>
-                 <sc_host>sc_propertyNames['sc_host']</sc_host>
-				 <sc_token>sc_propertyNames['sc_token']</sc_token>
-              </properties> 
-            </configuration>
           </execution>
         </executions>
       </plugin> 
