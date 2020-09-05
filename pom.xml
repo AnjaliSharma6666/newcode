@@ -23,10 +23,10 @@
             </goals>
             <configuration>
 			<sc_propertyNames>
-            <sc_propertyName>${sc_executionNodeIds}</sc_propertyName>
-            <sc_propertyName>${sc_host}</sc_propertyName> <!-- variable args here!!! -->
-            <sc_propertyName>${sc_token}</sc_propertyName>
-			</sc_propertyNames>
+				 <sc_executionNodeIds>${sc_executionNodeIds}</sc_executionNodeIds>
+                 <sc_host>${sc_host}</sc_host>
+				 <sc_token>${sc_token}</sc_token>
+              </sc_propertyNames> 
             </configuration>
           </execution>
         </executions>
