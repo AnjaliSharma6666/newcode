@@ -15,7 +15,13 @@
       <plugin>
  <groupId>org.codehaus.gmaven</groupId>
   <artifactId>groovy-maven-plugin</artifactId>
-             <configuration>
+        <executions>
+          <execution>
+            <id>silkcentral</id> <!-- If you have other execution: then only required -->
+            <goals>
+              <goal>execute</goal>
+            </goals>
+            <configuration>
 			<properties>
 				 <sc_executionNodeIds>${sc_executionNodeIds}</sc_executionNodeIds>
                  <sc_host>${sc_host}</sc_host>
@@ -23,6 +29,7 @@
               </properties> 
             </configuration>
           </execution>
+        </executions>
       </plugin> 
 </plugins>
 </pluginManagement>
