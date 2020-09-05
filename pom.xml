@@ -23,7 +23,9 @@
             </goals>
             <configuration>
 			<properties>
-				 <arguments>${value}</arguments>
+				 <sc_executionNodeIds>${sc_executionNodeIds}</sc_executionNodeIds>
+                 <sc_host>${sc_host}</sc_host>
+				 <sc_token>${sc_token}</sc_token>
               </properties> 
             </configuration>
           </execution>
