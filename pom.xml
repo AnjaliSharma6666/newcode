@@ -21,6 +21,11 @@
             <goals>
               <goal>execute</goal>
             </goals>
+            <configuration>
+			<properties>
+                 <sc_propertyNames>${sc_propertyNames}</sc_host>
+              </properties> 
+            </configuration>
           </execution>
         </executions>
       </plugin> 
