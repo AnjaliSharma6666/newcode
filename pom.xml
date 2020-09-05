@@ -22,10 +22,11 @@
               <goal>execute</goal>
             </goals>
             <configuration>
-            <argument>${sc_executionNodeIds}</argument>
-            <argument>${sc_host}</argument> <!-- variable args here!!! -->
-            <argument>${sc_token}</argument>
-        </arguments>
+			<sc_propertyNames>
+            <sc_propertyName>${sc_executionNodeIds}</sc_propertyName>
+            <sc_propertyName>${sc_host}</sc_propertyName> <!-- variable args here!!! -->
+            <sc_propertyName>${sc_token}</sc_propertyName>
+			</sc_propertyNames>
             </configuration>
           </execution>
         </executions>
