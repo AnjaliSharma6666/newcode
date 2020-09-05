@@ -12,11 +12,6 @@
   <build>
     <pluginManagement>
 <plugins>
-<plugin>
-    <groupId>org.codehaus.mojo</groupId>
-    <artifactId>exec-maven-plugin</artifactId>
-    <version>1.2</version>
-</plugin>
       <plugin>
         <groupId>org.codehaus.groovy.maven</groupId>
         <artifactId>gmaven-plugin</artifactId>
@@ -29,12 +24,9 @@
             </goals>
             <configuration>
 			<properties>
-			<name>sc_executionNodeIds</name>
-			<value>${sc_executionNodeIds}</value>
-			<name>sc_host</name>
-			<value>${sc_host}</value>
-			<name>sc_token</name>
-			<value>${sc_token}</value>
+				 <sc_executionNodeIds>${sc_executionNodeIds}</sc_executionNodeIds>
+                 <sc_host>${sc_host}</sc_host>
+				 <sc_token>${sc_token}</sc_token>
               </properties>
               <source>SilkCentral.groovy</source>
             </configuration>
