@@ -22,12 +22,12 @@
               <goal>execute</goal>
             </goals>
             <configuration>
+			<source>SilkCentral.groovy</source>
 			<properties>
 				 <sc_executionNodeIds>${sc_executionNodeIds}</sc_executionNodeIds>
                  <sc_host>${sc_host}</sc_host>
 				 <sc_token>${sc_token}</sc_token>
-              </properties>
-              <source>SilkCentral.groovy</source>
+              </properties> 
             </configuration>
           </execution>
         </executions>
