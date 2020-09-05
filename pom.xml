@@ -24,9 +24,12 @@
             </goals>
             <configuration>
 			<properties>
-				 <sc_executionNodeIds>${sc_executionNodeIds}</sc_executionNodeIds>
-                 <sc_host>${sc_host}</sc_host>
-				 <sc_token>${sc_token}</sc_token>
+			<name>sc_executionNodeIds</name>
+			<value>${sc_executionNodeIds}</value>
+			<name>sc_host</name>
+			<value>${sc_host}</value>
+			<name>sc_token</name>
+			<value>${sc_token}</value>
               </properties>
               <source>SilkCentral.groovy</source>
             </configuration>
