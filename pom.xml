@@ -18,7 +18,6 @@
         <executions>
           <execution>
             <id>silkcentral</id> <!-- If you have other execution: then only required -->
-            <phase>process-classes</phase> <!-- If you need to override  -->
             <goals>
               <goal>execute</goal>
             </goals>
