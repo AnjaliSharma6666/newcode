@@ -21,6 +21,8 @@ task silkCentralLaunch {
     def parameters = project.ext.properties.findAll { !sc_propertyNames.contains(it.key) && !it.key.startsWith('teamcity')}
     def startConfig = new StartConfig()
     parameters.each{startConfig.parameters.add([name:it.key, value:it.value])}
+	println name
+	println value
     startConfig.sourceControlBranch = findProperty('sc_sourceControlBranch')
     startConfig.buildName = findProperty('sc_buildName')
     startConfig.sinceBuild = findProperty('sc_sinceBuild')
